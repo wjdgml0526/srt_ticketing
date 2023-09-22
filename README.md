@@ -1,6 +1,6 @@
 # srt_ticketing
 ## Pseudo code
-''' <\n>
+```
 def srt_ticketing():
     while srt_time + 2hours >= now:
         로그인 코드
@@ -47,4 +47,4 @@ def srt_ticketing():
         
         time.sleep(30 ~ 60)
         now
-'''
+```
