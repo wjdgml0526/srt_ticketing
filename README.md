@@ -1,5 +1,6 @@
 # srt_ticketing
 ## Pseudo code
+'''
 def srt_ticketing():
     while srt_time + 2hours >= now:
         로그인 코드
@@ -17,7 +18,7 @@ def srt_ticketing():
                     if 예약 가능:
                     else:
                         다음 행 확인
-										    if 다음 행 없는 경우:
+			if 다음 행 없는 경우:
                             경고창 확인
                             코드 종료
         else:
@@ -46,3 +47,4 @@ def srt_ticketing():
         
         time.sleep(30 ~ 60)
         now
+'''
