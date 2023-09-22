@@ -232,8 +232,8 @@ def srt_ticketing(
         
         
         options = Options()
-        options.add_experimental_option('detach', True)
-        # options.add_argument('headless')                  # 서버에서 돌릴 경우 옵션
+        # options.add_experimental_option('detach', True)
+        options.add_argument('headless')                  # 서버에서 돌릴 경우 옵션
 
         driver = webdriver.Chrome(options = options)
         driver.implicitly_wait(10)
@@ -487,6 +487,10 @@ def srt_ticketing(
                     col += 1
                     dpt_hour, dpt_min = train_time(col = col, bs_xpath = bs_xpath)
                     continue
+            else:
+                time.sleep(random.randint(30, 60))
+                now_time = datetime.datetime.now()
+                continue
             
             col = 1
             bs_xpath = '//*[@id="result-form"]/fieldset/div[13]/table/tbody/'
@@ -543,7 +547,7 @@ def srt_ticketing(
                 pass
             
             # 예약요청 버튼 클릭
-            driver.find_element(By.XPATH, '//*[@id="result-form"]/fieldset/div[19]/input[2]').click()
+            driver.find_element(By.XPATH, '//*[@id="result-form"]/fieldset/div[19]/input[2]').send_keys('\n')
             
             # 결제 단계 진행
             payment(
