@@ -1,6 +1,6 @@
 # srt_ticketing
 ## Pseudo code
-```
+```python
 def srt_ticketing():
     while srt_time + 2hours >= now:
         로그인 코드
@@ -51,7 +51,7 @@ def srt_ticketing():
 
 ## 필요한 변수
 vars.py
-```
+```python
 # 로그인 정보
 user_id = 'srt id'                            # 숫자 10자리 string 타입으로 입력
 user_pwd = 'srt passward'                     # 비밀번호 string 타입으로 입력
