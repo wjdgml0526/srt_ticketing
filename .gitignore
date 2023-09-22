@@ -1,0 +1,8 @@
+# virtual environment
+.ticket_rez/
+
+# pycache
+__pycache__/
+
+test.py
+vars.py
