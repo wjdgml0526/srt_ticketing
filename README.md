@@ -1,2 +1,2 @@
-# srt_ticketing<\n>
+# srt_ticketing
 ## Pseudo code
