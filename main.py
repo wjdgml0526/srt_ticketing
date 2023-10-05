@@ -233,7 +233,10 @@ def srt_ticketing(
         
         options = Options()
         # options.add_experimental_option('detach', True)
-        options.add_argument('headless')                  # 서버에서 돌릴 경우 옵션
+        # 서버에서 돌릴 때 옵션
+        options.add_argument('headless')
+        options.add_argument('window-size=1920x1080')
+        options.add_argument("disable-gpu")
 
         driver = webdriver.Chrome(options = options)
         driver.implicitly_wait(10)
